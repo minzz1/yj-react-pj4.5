@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import LogoAsset from "./asset/LogoAsset";
 import SearchAsset from "./asset/SearchAsset";
+import SignUp from "../app/SignUp";
 
 const GNB = [
   { mainTitle: "공연안내", subTitle: "Performance", link: "/information" },
@@ -39,7 +40,9 @@ export default function Header() {
             </div>
             <div>Home</div>
             <div>login</div>
-            <div>join</div>
+            <Link to="/signup">
+              <div>join</div>
+            </Link>
             <select size="sm" className=" border  border-neutral-300 px-2  text-sm rounded-sm py-1">
               <option>한국어</option>
               <option>English</option>
